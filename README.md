@@ -1,8 +1,27 @@
-# React + Vite
+Secret Santa App
+Overview
+Easily organize your office’s Secret Santa! Upload employee and previous year CSVs, and the app generates random pairings.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+How to Use
 
-Currently, two official plugins are available:
+Upload Files:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Click "Upload Employee CSV" for employee names.
+Click "Upload Previous Year CSV" for last year's assignments.
+Generate Assignments:
+
+Hit "Generate Secret Santa Assignments" to process the files.
+Download Results:
+
+Once ready, download the assignments as a CSV by clicking "Download CSV."
+API
+
+POST /upload: Handles file uploads and returns the new pairings in a CSV format.
+Request: CSV files for employees and last year's assignments.
+Response: CSV string of new assignments.
+Tech Stack
+
+React: For UI
+Ant Design: UI components
+axios: API requests
+TypeScript: For clean, safe code
